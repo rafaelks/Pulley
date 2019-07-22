@@ -669,7 +669,7 @@ open class PulleyViewController: UIViewController, PulleyDrawerViewControllerDel
         }
         
         // Setup
-        primaryContentContainer.backgroundColor = UIColor.white
+        primaryContentContainer.backgroundColor = .systemBackground
         
         definesPresentationContext = true
         
@@ -713,9 +713,9 @@ open class PulleyViewController: UIViewController, PulleyDrawerViewControllerDel
         
         drawerScrollView.addSubview(drawerContentContainer)
         
-        primaryContentContainer.backgroundColor = UIColor.white
+        primaryContentContainer.backgroundColor = .systemBackground
         
-        self.view.backgroundColor = UIColor.white
+        self.view.backgroundColor = .systemBackground
         
         self.view.addSubview(primaryContentContainer)
         self.view.addSubview(backgroundDimmingView)
@@ -852,7 +852,7 @@ open class PulleyViewController: UIViewController, PulleyDrawerViewControllerDel
             let cardMaskLayer = CAShapeLayer()
             cardMaskLayer.path = borderPath
             cardMaskLayer.frame = drawerContentContainer.bounds
-            cardMaskLayer.fillColor = UIColor.white.cgColor
+            cardMaskLayer.fillColor = UIColor.systemBackground.cgColor
             cardMaskLayer.backgroundColor = UIColor.clear.cgColor
             drawerContentContainer.layer.mask = cardMaskLayer
             drawerShadowView.layer.shadowPath = borderPath
@@ -1143,7 +1143,7 @@ open class PulleyViewController: UIViewController, PulleyDrawerViewControllerDel
         let cardMaskLayer = CAShapeLayer()
         cardMaskLayer.path = borderPath
         cardMaskLayer.frame = drawerContentContainer.bounds
-        cardMaskLayer.fillColor = UIColor.white.cgColor
+        cardMaskLayer.fillColor = UIColor.systemBackground.cgColor
         cardMaskLayer.backgroundColor = UIColor.clear.cgColor
         drawerContentContainer.layer.mask = cardMaskLayer
 
