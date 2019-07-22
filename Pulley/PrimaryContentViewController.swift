@@ -45,14 +45,12 @@ class PrimaryContentViewController: UIViewController {
     
     @IBAction func runPrimaryContentTransitionWithoutAnimation(sender: AnyObject) {
         let primaryContent = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PrimaryTransitionTargetViewController")
-
-        self.pulleyViewController?.setPrimaryContentViewController(controller: primaryContent, animated: false)
+        pulleyViewController?.setDrawerContentViewController(controller: primaryContent, animated: true)
     }
     
     @IBAction func runPrimaryContentTransition(sender: AnyObject) {
         let primaryContent = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PrimaryTransitionTargetViewController")
-
-        self.pulleyViewController?.setPrimaryContentViewController(controller: primaryContent, animated: true)
+        pulleyViewController?.setDrawerContentViewController(controller: primaryContent, animated: true)
     }
 }
 

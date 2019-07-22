@@ -176,8 +176,7 @@ extension DrawerContentViewController: UITableViewDelegate {
         let primaryContent = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PrimaryTransitionTargetViewController")
 
         pulleyViewController?.setDrawerPosition(position: .collapsed, animated: true)
-
-        pulleyViewController?.setPrimaryContentViewController(controller: primaryContent, animated: false)
+        pulleyViewController?.setDrawerContentViewController(controller: primaryContent, animated: true)
     }
 }
 
